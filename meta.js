@@ -8,6 +8,8 @@
 
 const path = require('path')
 
+const { sortDependencies, installDependencies, printMessage } = require('./utils')
+
 module.export = {
   // 收集用户自定义数据
   prompts: {
@@ -25,6 +27,10 @@ module.export = {
     author: {
       type: 'input',
       message: 'Author'
+    },
+    unit: {
+      type: 'confirm',
+      message: 'Set up unit tests'
     },
     autoInstall: {
       type: 'list',
@@ -50,6 +56,12 @@ module.export = {
   },
   // 根据条件过滤文件
   filters: {
+    'config/test.env.js': 'unit',
+    'build/webpack.test.conf.js': "unit",
+    'test/unit/**/*': 'unit',
+    'test/unit/index.js': "unit",
+    'test/unit/karma.conf.js': "unit",
+    'test/unit/specs/index.js': "unit",
   },
   // 模板渲染完成后消息
   completeMessage: '',
@@ -63,9 +75,6 @@ module.export = {
 
     if (data.autoInstall) {
       installDependencies(cwd, data.autoInstall, green)
-        .then(() => {
-          return runLintFix(cwd, data, green)
-        })
         .then(() => {
           printMessage(data, green)
         })
