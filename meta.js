@@ -14,18 +14,18 @@ module.export = {
   // 收集用户自定义数据
   prompts: {
     name: {
-      type: 'input',
+      type: 'string',
       required: true,
       message: 'Project name'
     },
     description: {
-      type: 'input',
+      type: 'string',
       required: false,
       message: 'Project description',
       default: 'A custom project template'
     },
     author: {
-      type: 'input',
+      type: 'string',
       message: 'Author'
     },
     unit: {
