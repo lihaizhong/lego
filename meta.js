@@ -10,50 +10,46 @@ const path = require('path')
 
 const { sortDependencies, installDependencies, printMessage } = require('./utils')
 
-const prompts = {
-  name: {
-    required: true,
-    message: 'Project name'
-  },
-  description: {
-    message: 'Project description',
-    default: 'A custom project template'
-  },
-  author: {
-    message: 'Author'
-  },
-  unit: {
-    type: 'confirm',
-    message: 'Add unit tests'
-  },
-  autoInstall: {
-    type: 'list',
-    message: 'Should we run `npm install` for you after the project has been created? (recommended)',
-    choices: [
-      {
-        name: 'Yes, use NPM',
-        value: 'npm',
-        short: 'npm',
-      },
-      {
-        name: 'Yes, use Yarn',
-        value: 'yarn',
-        short: 'yarn',
-      },
-      {
-        name: 'No, I will handle that myself',
-        value: false,
-        short: 'no',
-      }
-    ]
-  }
-}
-
-console.log(prompts)
-
-module.export = {
+module.exports = {
   // 收集用户自定义数据
-  prompts,
+  prompts: {
+    name: {
+      required: true,
+      message: 'Project name'
+    },
+    description: {
+      message: 'Project description',
+      default: 'A custom project template'
+    },
+    author: {
+      message: 'Author'
+    },
+    unit: {
+      type: 'confirm',
+      message: 'Add unit tests'
+    },
+    autoInstall: {
+      type: 'list',
+      message: 'Should we run `npm install` for you after the project has been created? (recommended)',
+      choices: [
+        {
+          name: 'Yes, use NPM',
+          value: 'npm',
+          short: 'npm',
+        },
+        {
+          name: 'Yes, use Yarn',
+          value: 'yarn',
+          short: 'yarn',
+        },
+        {
+          name: 'No, I will handle that myself',
+          value: false,
+          short: 'no',
+        }
+      ]
+    }
+  },
   // 根据条件过滤文件
   filters: {
     'config/test.env.js': 'unit',
