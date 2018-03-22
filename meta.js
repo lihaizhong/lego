@@ -60,7 +60,7 @@ module.export = {
     'test/unit/specs/index.js': "unit",
   },
   // 模板渲染完成后消息
-  completeMessage: '',
+  // completeMessage: '',
   // 模板渲染完成后的回调函数，优先于`completeMessage`属性
   complete (data, { chalk }) {
     const green = chalk.green
