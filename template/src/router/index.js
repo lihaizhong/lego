@@ -8,10 +8,9 @@ const router = new Router({
   routes
 })
 
-// Vue实例
-const app = router.app
-// Vuex实例
-const store = app.$options.store
+// 注：只能在router.beforeEach 和 router.afterEach中获得
+// Vue实例 router.app
+// Vuex实例 router.app.$options.store
 
 router.beforeEach((to, from, next) => {
   if (from.name !== to.name) {

@@ -10,27 +10,23 @@ const path = require('path')
 
 const { sortDependencies, installDependencies, printMessage } = require('./utils')
 
-module.export = {
+module.exports = {
   // 收集用户自定义数据
   prompts: {
     name: {
-      type: 'string',
       required: true,
       message: 'Project name'
     },
     description: {
-      type: 'string',
-      required: false,
       message: 'Project description',
       default: 'A custom project template'
     },
     author: {
-      type: 'string',
       message: 'Author'
     },
     unit: {
       type: 'confirm',
-      message: 'Set up unit tests'
+      message: 'Add unit tests'
     },
     autoInstall: {
       type: 'list',
@@ -64,7 +60,7 @@ module.export = {
     'test/unit/specs/index.js': "unit",
   },
   // 模板渲染完成后消息
-  completeMessage: '',
+  // completeMessage: '',
   // 模板渲染完成后的回调函数，优先于`completeMessage`属性
   complete (data, { chalk }) {
     const green = chalk.green
