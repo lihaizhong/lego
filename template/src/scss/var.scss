@@ -1,0 +1,99 @@
+/**
+ * @author Sky
+ * @email 854323752@qq.com
+ * @create date 2018-03-21 10:02:09
+ * @modify date 2018-03-21 10:02:09
+ * @desc scss变量集合
+ * @note 私有变量只允许在本文件中使用，公开变量将开放在其他文件中使用
+ * primary/minor/aux(aussit)/default
+*/
+
+//-----------------------------------------------------------------------------------------//
+//---- PRIVATE VARIABLE ----//
+// default 私有样式命名（应用于当前文件）
+
+//-- color
+$black: #000000 !default;
+$gray-100: #333333 !default;
+$gray-300: #666666 !default;
+$gray-600: #999999 !default;
+$gray-700: #A2A2A2 !default;
+$gray-800: #DDDDDD !default;
+$gray-900: #F8F8F8 !default;
+$white: #FFFFFF !default;
+
+$pale-red: #DE9696 !default;
+$azure: #51C5F3 !default;
+$blue: #00A9ED !default;
+
+//-- font
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, STHeiTi, Arial, sans-serif !default;
+$font-family-default: $font-family-sans-serif !default;
+
+$font-size-default: 16px !default;
+
+//-- radius
+$radius-default: 3px !default;
+
+//-- box-shadow
+$shadow-default: rgba(81, 197, 243, 0.17) !default;
+
+//-- gradient
+
+//-----------------------------------------------------------------------------------------//
+//---- PUBLIC VARIABLE ----//
+// primary/minor/aux(aussit)/important 公共样式命名（应用于外部文件）
+
+//-- body
+$body-bg-primary: $gray-900 !default;
+$body-bg-minor: $white !default;
+
+//-- header
+$header-bg-primary: $white !default;
+
+//-- form
+$form-bg-primary: $white !default;
+
+//-- box
+$box-bg-primary: $white !default;
+$box-bg-minor: $gray-800 !default;
+
+$box-shadow-primary: $shadow-default !default;
+
+//-- font-size
+$font-size-primary: $font-size-default !default;
+$font-size-xxs: $font-size-default - 4px !default;
+$font-size-l: $font-size-default + 2px !default;
+$font-size-xxl: $font-size-default + 6px !default;
+
+//-- font-family
+$font-family-primary: $font-family-sans-serif !default;
+
+//-- text
+$text-color-primary: $gray-100 !default;
+$text-color-minor: $gray-300 !default;
+$text-color-aux: $gray-600 !default;
+$text-color-important: $pale-red !default;
+$text-color-normal: $gray-700 !default;
+// $text-color-highlight:  !default;
+$text-color-light: $white !default;
+$text-color-dark: $black !default;
+
+//-- text-shadow
+// $text-shadow-default
+
+//-- link
+$link-color-primary: $azure !default;
+
+//-- button
+$btn-color-light: $white !default;
+
+$btn-bg-primary: $blue !default;
+
+$btn-radius-primary: $radius-default !default;
+
+//-- border
+$border-color-primary: $gray-800 !default;
+
+$border-radius-primary: $radius-default !default;
+
