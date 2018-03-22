@@ -45,25 +45,12 @@ To get started:
   ${yellow(
     `${data.inPlace ? '' : `cd ${data.destDirName}\n  `}${installMsg(
       data
-    )}${lintMsg(data)}npm run dev`
+    )}npm run dev`
   )}
   
 Documentation can be found at https://vuejs-templates.github.io/webpack
 `
   console.log(message)
-}
-
-/**
- * If the user will have to run lint --fix themselves, it returns a string
- * containing the instruction for this step.
- * @param {Object} data Data from questionnaire.
- */
-function lintMsg(data) {
-  return !data.autoInstall &&
-    data.lint &&
-    lintStyles.indexOf(data.lintConfig) !== -1
-    ? 'npm run lint -- --fix (or for yarn: yarn run lint --fix)\n  '
-    : ''
 }
 
 /**
