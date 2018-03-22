@@ -13,24 +13,20 @@ const { sortDependencies, installDependencies, printMessage } = require('./utils
 module.export = {
   // 收集用户自定义数据
   prompts: {
-    name: {
-      type: 'string',
-      required: true,
-      message: 'Project name'
-    },
+    // name: {
+    //   required: true,
+    //   message: 'Project name'
+    // },
     description: {
-      type: 'string',
-      required: false,
       message: 'Project description',
       default: 'A custom project template'
     },
-    author: {
-      type: 'string',
-      message: 'Author'
-    },
+    // author: {
+    //   message: 'Author'
+    // },
     unit: {
       type: 'confirm',
-      message: 'Set up unit tests'
+      message: 'Add unit tests'
     },
     autoInstall: {
       type: 'list',
