@@ -17,3 +17,6 @@
 ```shell
 vue init lihaizhong/lego project-name
 ```
+
+- [如何编写meta.js](./docs/meta.md)
+- [vue-cli模板简介](./docs/vue-cli模板.md)
