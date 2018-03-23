@@ -12,6 +12,7 @@ Vue.config.productionTip = false
 
 axiosConfig()
 
+/* eslint no-new: 0 */
 new Vue({
   el: '#app',
   router,
