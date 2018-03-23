@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
-import axiosConfig from './apis'
+import axiosConfig from './service'
 
 import 'reset-css/_reset.scss'
 
