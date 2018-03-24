@@ -24,6 +24,10 @@ module.exports = {
     author: {
       message: 'Author'
     },
+    axios: {
+      type: 'confirm',
+      message: 'Add axios'
+    },
     unit: {
       type: 'confirm',
       message: 'Add unit tests'
@@ -52,6 +56,7 @@ module.exports = {
   },
   // 根据条件过滤文件
   filters: {
+    'src/service/index.js': 'axios',
     'config/test.env.js': 'unit',
     'build/webpack.test.conf.js': "unit",
     'test/unit/**/*': 'unit',
