@@ -28,6 +28,10 @@ module.exports = {
       type: 'confirm',
       message: 'Add axios'
     },
+    server: {
+      type: 'confirm',
+      message: 'Are you need server'
+    },
     unit: {
       type: 'confirm',
       message: 'Add unit tests'
@@ -63,6 +67,7 @@ module.exports = {
     'test/unit/index.js': "unit",
     'test/unit/karma.conf.js': "unit",
     'test/unit/specs/index.js': "unit",
+    'server/**/*': 'server'
   },
   // 模板渲染完成后消息
   // completeMessage: '',
