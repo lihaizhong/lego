@@ -34,7 +34,7 @@ exports.prompts = {
     default: 'okaidia',
     label: '请选择代码格式主题：'
   },
-  plugins: {
+  extensions: {
     type: 'checkbox',
     choices: ['echarts', 'mermaid', 'ketex'],
     label: '请选择插件：'

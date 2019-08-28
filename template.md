@@ -1,9 +1,9 @@
 title: {{title}}
 speaker: {{speaker}}
 prismTheme: {{theme}}
-{{#if plugins }}
+{{#if extensions }}
 plugins:
-  {{#each this }}
+  {{#each extensions }}
     - {{this}}
   {{/each}}
 {{/if}}
