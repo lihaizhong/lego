@@ -4,7 +4,7 @@ prismTheme: {{theme}}
 {{#if extensions }}
 plugins:
   {{#each extensions }}
-    - {{this}}
+    - {{@key}}
   {{/each}}
 {{/if}}
 
