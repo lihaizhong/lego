@@ -1,7 +1,6 @@
-title: {{title}}
+<!-- title: {{title}}
 speaker: {{speaker}}
-prismTheme: {{theme}}
-{{plugins.toString()}}
+prismTheme: {{theme}} -->
 {{#if plugins }}
 plugins:
   {{#each plugins }}
@@ -9,5 +8,7 @@ plugins:
   {{/each}}
 {{/if}}
 
+<!-- <slide class="bg-apple aligncenter">
+
 {{title}} {.text-landing.text-shadow}
-By {{speaker}} {.text-intro}
+By {{speaker}} {.text-intro} -->
