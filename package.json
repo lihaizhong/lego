@@ -1,0 +1,23 @@
+{
+  "name": "lego",
+  "version": "1.0.0",
+  "description": "nodeppt template",
+  "main": "meta.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lihaizhong/lego.git"
+  },
+  "keywords": [
+    "nodeppt",
+    "template"
+  ],
+  "author": "sky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lihaizhong/lego/issues"
+  },
+  "homepage": "https://github.com/lihaizhong/lego#readme"
+}
