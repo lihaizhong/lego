@@ -4,7 +4,7 @@ nodeppt 初始化模板
 
 Usage
 
-```
+```bash
 nodeppt new slide.md -t lihaizhong/lego/tree/nodeppt-template
 ```
 
