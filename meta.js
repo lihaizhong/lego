@@ -36,7 +36,7 @@ exports.prompts = {
   },
   extensions: {
     type: 'checkbox',
-    choices: ['echarts', 'mermaid', 'ketex'],
+    choices: [{ name: 'echarts' }, { name: 'mermaid' }, { name: 'ketex' }],
     label: '请选择插件：'
   }
 }
