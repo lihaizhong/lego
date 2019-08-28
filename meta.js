@@ -21,7 +21,7 @@ exports.prompts = {
     default: '{{username}}'
   },
   theme: {
-    type: 'list',
+    type: 'rawlist',
     choices: [
       'dark',
       'coy',
@@ -37,7 +37,6 @@ exports.prompts = {
   plugins: {
     type: 'checkbox',
     choices: ['echarts', 'mermaid', 'ketex'],
-    default: [],
     label: '请选择插件：'
   }
 }
