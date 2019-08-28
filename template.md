@@ -1,7 +1,8 @@
 title: {{title}}
 speaker: {{speaker}}
 prismTheme: {{theme}}
-{{#if plugins && plugins.length }}
+{{plugins.toString()}}
+{{#if plugins }}
 plugins:
   {{#each plugins }}
     - {{this}}

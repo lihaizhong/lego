@@ -21,7 +21,7 @@ exports.prompts = {
     default: '{{username}}'
   },
   theme: {
-    type: 'rawlist',
+    type: 'list',
     choices: [
       'dark',
       'coy',
