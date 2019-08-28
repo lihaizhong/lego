@@ -17,7 +17,8 @@ exports.prompts = {
   },
   speaker: {
     type: 'string',
-    label: '请填写演讲人：'
+    label: '请填写演讲人：',
+    default: '{{username}}'
   },
   theme: {
     type: 'list',
